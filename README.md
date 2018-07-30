@@ -16,6 +16,7 @@ Tool to convert a list of images to video. Follow the steps below to use this To
 	g++ -std=c++11 Image2Video.cpp -o Image2Video.o `pkg-config --cflags --libs opencv`
 - 2: Images need have sequence starting with 1.png 2.png ... n.png
 - 3: To run, enter in folder and type in the terminal:
+		
 		./image2video.o 100 '/home/Imagens' png /home/video.avi 3
 	./image2video.o A B C D E
 	-A: Number of images, to convert in videos. 
