@@ -10,7 +10,7 @@ This repository provides video manipulation tools based on the Opencv library wi
   - Programming Language -> C/C++
   - LIB -> Opencv
 
-#### Image2Video
+### Image2Video
 Tool to convert a list of images to video. Follow the steps below to use this Tool:
 
 - 1: Compile on terminal using the command: 
