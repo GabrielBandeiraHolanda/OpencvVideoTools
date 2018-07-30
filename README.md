@@ -19,9 +19,9 @@ This repository provides video manipulation tools based on the Opencv library wi
     - 2: Images need have sequence starting with 1.png 2.png ... n.png
 	- 3: To run, enter in folder and type in the terminal:
 	
-		./image2video.o <A> <B> <C> <D> <E>
 		EXAMPLE: ./image2video.o 100 '/home/Imagens' png /home/video.avi 3
 		
+		./image2video.o <A> <B> <C> <D> <E>
 	    A -> Number of images, to convert in videos. 
 	    B -> Path of images  
 	    C -> Image file formats 
