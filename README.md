@@ -22,7 +22,8 @@ This repository provides video manipulation tools based on the Opencv library wi
 		EXAMPLE: ./image2video.o 100 '/home/Imagens' png /home/video.avi 3
 		
 		./image2video.o A B C D E
-	    A -> Number of images, to convert in videos. 
+	    
+		A -> Number of images, to convert in videos. 
 	    B -> Path of images  
 	    C -> Image file formats 
 	    D -> Name Of Video
