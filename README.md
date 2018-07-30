@@ -1,4 +1,4 @@
-# OpencvVideoTools
+# Opencv Video Tools
 Video manipulation repository, using Opencv library
 
 ## Getting Started
@@ -7,12 +7,9 @@ This repository provides video manipulation tools based on the Opencv library wi
 ### Prerequisites
 
   - SO -> Linux Ubuntu
-
-	```
   - Programming Language -> C/C++
   - LIB -> Opencv
 
-  
 ### Image2Video
 
 	Tool to convert a list of images to video. Follow the steps below to use this Tool:
