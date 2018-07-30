@@ -3,13 +3,13 @@ Video manipulation repository, using Opencv library
 
 This repository provides video manipulation tools based on the Opencv library with C/C++ language.
 
-* REQUIREMENTS:
+* Requirements:
 
-  - SO:  Linux Ubuntu
+  - SO -> Linux Ubuntu
 
-  - Programming Language: C/C++
+  - Programming Language -> C/C++
 	
-  - LIB: Opencv
+  - LIB -> Opencv
 
   
 
