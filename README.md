@@ -17,7 +17,7 @@ Tool to convert a list of images to video. Follow the steps below to use this To
 
 		g++ -std=c++11 Image2Video.cpp -o Image2Video.o `pkg-config --cflags --libs opencv`
 - 2: Images need have sequence starting with 1.png 2.png ... n.png
-- 3: To run, enter in folder and type in the terminal:
+- 3: To run, type in the terminal:
 		
 		./image2video.o 100 '/home/Imagens' png /home/video.avi 3
 		./image2video.o  A        B          C         D        E
@@ -31,7 +31,7 @@ Tool to generate a list of images, from a video file. Follow the steps below to 
 - 1: Using the terminal enter in repository folder and type the command: 
 
 		g++ -std=c++11 Video2Image.cpp -o Video2Image.o `pkg-config --cflags --libs opencv`
-- 2: To run, enter in folder and type in the terminal:
+- 2: To run, type in the terminal:
 		
 		./video2image.o /home/video.avi /home/Imagens png
 		./image2video.o  	A              B       C
@@ -39,6 +39,20 @@ Tool to generate a list of images, from a video file. Follow the steps below to 
 
 - 3: Images are saved in sequence starting with 1.png 2.png ... n.png
 - 4: Limitations, only images in (.png) or (.jpg) are supported and only (.avi) video format is supported.
+
+### ShowVideo
+Tool to show a video file. Follow the steps below to use this Tool:
+
+- 1: Using the terminal enter in repository folder and type the command: 
+
+		g++ -std=c++11 ShowVideo.cpp -o ShowVideo.o `pkg-config --cflags --libs opencv`
+- 2: To run, type in the terminal:
+		
+		./ShowVideo.o /home/video.avi
+		./ShowVideo.o  	     A       
+  A = Input Video
+
+- 3: Press 'p', to control the video actions start and pause. If you want to quit the video, press 'Esc'. 
 
 
 	    
