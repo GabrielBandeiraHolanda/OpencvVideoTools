@@ -17,12 +17,6 @@ int main(int argc, char *argv[])
 	  //=== ARGS ===
 	  if(argc!=6)
 	  {
-	    //cout<<"./image2video.o <A> <B> <C> <D> <E>"<<endl;
-	    //cout<<"A -> Numero De Imagens (As Imagens devem estar em sequencia numerica iniciando com 1)"<<endl;
-	    //cout<<"B -> Caminho Da Pasta Das Imagens (So é suportado imagens em (.png) ou (.jpg))"<<endl;
-	    //cout<<"C -> Formato Das Imagens"<<endl;
-	    //cout<<"D -> Nome Do Video Com Formato .avi (So é suportado salvar o video em (.avi))"<<endl;
-	    //cout<<"E -> FPS Do Video"<<endl;
 	    cout<<"exemplo: ./image2video.o 100 '/home/Imagens' png /home/video.avi 3"<<endl;
 	    exit(-1);
 	  }
