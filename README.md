@@ -68,5 +68,22 @@ Tool to merge a list of videos. Follow the steps below to use this Tool:
 
 - 3: Limitations, videos must be in numerical sequence starting with 1 and only (.avi) video format is supported.
 
+### RenameFiles
+Extra Tool, that rename a multiple files contained in a folder starting with 1 to N. This tool automatic list all 
+files contained in Iput Folder that have the specified File Format, and rename all using numeric order starting 
+with 1 to N. Example: 1.png, 2.png, ..., N.png. Follow the steps below to use this Tool:
+
+- 1: Using the terminal enter in repository folder and type the command: 
+
+		g++ -std=c++11 Rename.cpp -o Rename.o
+- 2: To run, type in the terminal:
+		
+	  	./Rename.o /home/images png /home/images
+		./Rename.o   	  A      B      C
+  A = Input Folder that contains files to be renamed, B = File Format, C = Output Folder
+ 
+- 3: Any format is supported for example: png, jpg, PDF, avi. 
+- 4: Output folder can be the same as input folder. 
+
 
 	    

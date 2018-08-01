@@ -12,8 +12,8 @@ int main(int argc, char** argv)
 {
   if(argc!=4)
   {
-    cerr<<"./program.o <InputFolder> <FileFormat> <OutputFolder>"<<endl;
-	  cerr<<"example: ./main.o /home/images"<<endl;
+    cerr<<"./Rename.o <InputFolder> <FileFormat> <OutputFolder>"<<endl;
+	  cerr<<"example: ./Rename.o /home/images png /home/images"<<endl;
 	  exit(-1);
   }
 
