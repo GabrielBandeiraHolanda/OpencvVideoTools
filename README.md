@@ -19,7 +19,7 @@ This repository provides video manipulation tools based on the Opencv library wi
 Tool to change FPS of a Video. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
-		
+
 		./VideoTools ChangeFPS <InputVideoPath> <OutputVideoPath> <OutputVideoFPS>
 		./VideoTools ChangeFPS home/input.avi home/output.avi 60
 
@@ -30,7 +30,7 @@ Tool to convert a list of images to video. Follow the steps below to use this To
 
 - 1: Images need have sequence starting with 1.png 2.png ... n.png
 - 2: To run, type in the terminal:
-		
+
 		./VideoTools Image2Video <NumberOfInputImages> <InputFolder> <FileFormatOfInputImages> <OutputVideo> <FPSVideo>
 		./VideoTools Image2Video 100 /home/Images png /home/video.avi 60
 
@@ -40,7 +40,7 @@ Tool to convert a list of images to video. Follow the steps below to use this To
 Tool to generate a list of images, from a video file. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
-		
+
 		./VideoTools Video2Image <InputVideo> <OutputPathImages> <ImageFormatOfOutputImages>
 		./VideoTools Video2Image /home/video.avi /home/Imagens png
 
@@ -51,7 +51,7 @@ Tool to generate a list of images, from a video file. Follow the steps below to 
 Tool to show a video file. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
-		
+
 		./VideoTools ShowVideo <InputPthOfVideo>
 		./VideoTools ShowVideo home/OutputVideo.avi      
 
@@ -61,24 +61,21 @@ Tool to show a video file. Follow the steps below to use this Tool:
 Tool to merge a list of videos. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
-		
+
 		./VideoTools MergeVideos <InputPthOfVideos> <NumberOfVideosForMerge> <OutputVideo>
 		./VideoTools MergeVideos /home/InputVideos 3 home/OutputVideo.avi
 
 - 2: Limitations, videos must be in numerical sequence starting with 1 and only (.avi) video format is supported.
 
 ### RenameFiles
-Extra Tool, that rename a multiple files contained in a folder starting with 1 to N. This tool automatic list all 
-files contained in Iput Folder that have the specified File Format, and rename all using numeric order starting 
+Extra Tool, that rename a multiple files contained in a folder starting with 1 to N. This tool automatic list all
+files contained in Iput Folder that have the specified File Format, and rename all using numeric order starting
 with 1 to N. Example: 1.png, 2.png, ..., N.png. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
-		
-	  	./VideoTools Rename <InputFolder> <FileFormat> <OutputFolder>
+
+	  ./VideoTools Rename <InputFolder> <FileFormat> <OutputFolder>
 		./VideoTools Rename /home/images png /home/images
- 
-- 2: Any format is supported for example: png, jpg, PDF, avi. 
-- 3: Output folder can be the same as input folder. 
 
-
-	    
+- 2: Any format is supported for example: png, jpg, PDF, avi.
+- 3: Output folder can be the same as input folder.
