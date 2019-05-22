@@ -15,7 +15,7 @@ This repository provides video manipulation tools based on the Opencv library wi
 		make clean
 		make
 
-### ChangeVideoFPS
+### Change Video FPS
 Tool to change FPS of a Video. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
@@ -25,7 +25,7 @@ Tool to change FPS of a Video. Follow the steps below to use this Tool:
 
 - 2: Limitations, only (.avi) and (.mp4) video format is supported.
 
-### Image2Video
+### Images to Video
 Tool to convert a list of images to video. Follow the steps below to use this Tool:
 
 - 1: Images need have sequence starting with 1.png 2.png ... n.png
@@ -36,7 +36,7 @@ Tool to convert a list of images to video. Follow the steps below to use this To
 
 - 3: Limitations, images must be in numerical sequence starting with 1, only images in (.png) or (.jpg) are supported and only (.avi) video format is supported.
 
-### Video2Image
+### Video to Images
 Tool to generate a list of images, from a video file. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
@@ -47,7 +47,7 @@ Tool to generate a list of images, from a video file. Follow the steps below to 
 - 2: Images are saved in sequence starting with 1.png 2.png ... n.png
 - 3: Limitations, only images in (.png) or (.jpg) are supported and only (.avi) video format is supported.
 
-### ShowVideo
+### Show Video
 Tool to show a video file. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
@@ -57,7 +57,7 @@ Tool to show a video file. Follow the steps below to use this Tool:
 
 - 2: Press 'p', to control the video actions start and pause. If you want to quit the video, press 'Esc'.
 
-### MergeVideos
+### Merge Videos
 Tool to merge a list of videos. Follow the steps below to use this Tool:
 
 - 1: To run, type in the terminal:
@@ -67,7 +67,7 @@ Tool to merge a list of videos. Follow the steps below to use this Tool:
 
 - 2: Limitations, videos must be in numerical sequence starting with 1 and only (.avi) video format is supported.
 
-### RenameFiles
+### Rename Files
 Extra Tool, that rename a multiple files contained in a folder starting with 1 to N. This tool automatic list all
 files contained in Iput Folder that have the specified File Format, and rename all using numeric order starting
 with 1 to N. Example: 1.png, 2.png, ..., N.png. Follow the steps below to use this Tool:
