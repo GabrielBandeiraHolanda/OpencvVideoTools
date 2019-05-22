@@ -75,7 +75,7 @@ with 1 to N. Example: 1.png, 2.png, ..., N.png. Follow the steps below to use th
 - 1: To run, type in the terminal:
 
 	  ./VideoTools Rename <InputFolder> <FileFormat> <OutputFolder>
-		./VideoTools Rename /home/images png /home/images
+	  ./VideoTools Rename /home/images png /home/images
 
 - 2: Any format is supported for example: png, jpg, PDF, avi.
 - 3: Output folder can be the same as input folder.
