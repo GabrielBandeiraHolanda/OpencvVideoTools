@@ -21,7 +21,7 @@ using namespace cv;
 int main(int argc, char** argv)
 {
   if(argc<2){
-    cout<<"\nVideoTools Methods: Rename, Image2Video, Video2Image, MergeVideos, ShowVideo and ChangeFPS is accepted !\n"<<endl;
+    cout<<"\nVideoTools Methods: Rename, Image2Video, Video2Image, MergeVideos, ShowVideo, ChangeFPS and ImageConverter is accepted !\n"<<endl;
     return -1;
   }
   string VideoToolsMethod(argv[1]);
@@ -195,8 +195,55 @@ int main(int argc, char** argv)
   	}
   	vid.release();
   }
+  else if( VideoToolsMethod== "ImageConverter" ){
+    
+    if(argc!=6){
+      cout<<"./VideoTools ImageConverter <InputFolder> <InputFileFormat> <OutputFolder> <OutputFileFormat>"<<endl;
+  	  cout<<"example: ./VideoTools /home/jpg jpg /home/png png"<<endl;
+  	  return -1;
+    }
+
+    struct dirent **namelist;
+  	int n = scandir(argv[2], &namelist, 0, alphasort);
+    if (n < 0){
+      perror("scandir");
+    }
+    else{
+      int file = 1;
+      string comparestrings;
+      string format(argv[3]);
+
+      string inputnamepath;
+      string str2 = "." + format;
+      string str3 = "." + string(argv[5]);
+  		while(n--){
+  			if( n>=2 ){
+          comparestrings = namelist[n]->d_name;
+          inputnamepath = string(argv[2]) + "/" + comparestrings;
+  				if (comparestrings.find(format) != std::string::npos){
+
+            comparestrings.replace(comparestrings.find(str2),str2.length(),str3);
+  					string outputnamepath = string(argv[4]) + "/" + comparestrings;
+  					
+            printf("%s\n",inputnamepath.c_str());
+            printf("%s\n",outputnamepath.c_str());
+            
+            Mat image = imread(inputnamepath, 1);
+            imwrite(outputnamepath, image);
+
+  					file++;
+  				}
+          comparestrings.clear();
+  			}
+  			free(namelist[n]);
+  		}
+  		free(namelist);
+  	}
+
+
+  }
   else{
-    cout<<"Only methods: Rename, Image2Video, Video2Image, MergeVideos, ShowVideo and ChangeFPS is accepted !!"<<endl;
+    cout<<"Only methods: Rename, Image2Video, Video2Image, MergeVideos, ShowVideo, ChangeFPS and ImageConverter is accepted !!"<<endl;
     return -1;
   }
 
