@@ -1,5 +1,5 @@
 # Opencv Video Tools
-Video manipulation repository, using Opencv library
+Video manipulation repository, using Opencv library.
 
 ## Getting Started
 This repository provides video manipulation tools based on the Opencv library with C/C++ language.
