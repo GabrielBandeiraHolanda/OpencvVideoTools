@@ -12,6 +12,7 @@ This repository provides video manipulation tools based on the Opencv library wi
 
 ### Installation
 - 1: Using the terminal enter in repository folder and type the command:
+
 		make clean
 		make
 
